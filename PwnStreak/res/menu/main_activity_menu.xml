@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        
+        
+        <item android:id="@+id/makepick"
+            android:title="Make Pick"
+            android:orderInCategory="1"
+            android:showAsAction= "always"/>
+        
+        <item android:id="@+id/myentry"
+            android:title="My Stats"
+            android:orderInCategory="2"
+            android:showAsAction="always"/>
+        
+        <item android:id="@+id/leader"
+            android:title="Leaderboard"
+            android:orderInCategory="3"
+            android:showAsAction="always"/>     
+               
+        <item android:id="@+id/settings"
+            android:title="Settings"
+            android:orderInCategory="4"
+            android:showAsAction="always"/>
+ 
+</menu>
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/buttonMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:orientation="horizontal" >
+ 
+       <TableRow
+           android:layout_width="fill_parent"
+           android:layout_height="50dp" >
+           <Button
+		        android:id="@+id/homeButton"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:gravity="center"
+		        android:layout_gravity="center"
+		        android:textSize="12sp"
+		        android:background="#f06000"
+		        android:textColor="#ffffff"
+		        android:text="Home"
+		        android:layout_weight="0.5" />
+	    
+		    <Button
+		        android:id="@+id/statButton"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:gravity="center"
+		        android:layout_gravity="center"
+				android:textSize="12sp"
+		        android:text="My Stats"
+		        android:textColor="#ffffff"
+		        android:background="#000000"
+		        android:layout_weight="0.5" />
+		
+		    <Button
+		        android:id="@+id/leaderButton"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:gravity="center"
+		        android:layout_gravity="center"
+		        android:textSize="12sp"
+		        android:text="Leaders"
+		        android:textColor="#ffffff"
+		        android:background="#000000"
+		        android:layout_weight="0.5" />
+		 
+		    <Button
+		        android:id="@+id/settingsButton"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:gravity="center"
+		        android:layout_gravity="center"
+		        android:textSize="12sp"
+		        android:text="Settings"
+		        android:textColor="#ffffff"
+		        android:background="#000000"
+		        android:layout_weight="0.5" />
+       </TableRow>
+    
+    
+ 
+</LinearLayout>

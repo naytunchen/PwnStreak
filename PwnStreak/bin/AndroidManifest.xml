@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="motive.e_sportstreak"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:uiOptions="splitActionBarWhenNarrow" >
+        <activity
+            android:name="motive.e_sportstreak.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar"  >
+        </activity>
+        <activity
+            android:name="motive.e_sportstreak.PrevActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="motive.e_sportstreak.TomorrowActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="motive.e_sportstreak.MyStatsActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="motive.e_sportstreak.LeaderboardActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="motive.e_sportstreak.LeaderLongestActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="motive.e_sportstreak.Leader_Most_Win_Activity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="motive.e_sportstreak.Leader_Lifetime_Activity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="motive.e_sportstreak.Leader_Lifetime_Win_Activity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="motive.e_sportstreak.Leader_Lifetime_Loss_Activity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity 
+            android:name="motive.e_sportstreak.SettingsActivity" 
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+        <activity android:name="com.facebook.LoginActivity" />
+        <activity
+            android:name="motive.e_sportstreak.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/APP_ID" />
+
+        <activity
+            android:name="motive.e_sportstreak.Signup_login_Activity"
+            android:label="@string/title_activity_login_activity2"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="motive.e_sportstreak.SignupActivity"
+            android:label="@string/title_activity_signup"
+            android:theme="@style/FullscreenTheme" >
+
+        </activity>
+    </application>
+
+</manifest>

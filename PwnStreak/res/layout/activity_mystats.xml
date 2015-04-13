@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+    <include
+    android:id="@+id/added_header"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    layout="@layout/activity_base" />
+
+    
+    <LinearLayout
+        android:id="@+id/user_stats_header"
+        android:layout_below="@id/added_header"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:background="#333333"
+        android:layout_height="50dp"
+        android:layout_gravity="center" >
+        <TextView 
+            android:id="@+id/user_stats"
+            android:paddingTop="8dip"
+            android:paddingLeft="10dip"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:textSize="20dip"
+            android:textColor="#ffffff"
+            android:text="BBB's Statistics" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/user_stats_title"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/user_stats_header"
+        android:background="#f8f8f8"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+        <TextView
+            android:id="@+id/this_month"
+            android:paddingLeft="10dip"
+            android:paddingTop="8dip"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="#252525"
+            android:text="@string/this_month_text" />
+    </LinearLayout>
+    
+    <TableLayout
+        android:id="@+id/tbLayout1"
+        android:layout_below="@id/user_stats_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+        
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:paddingLeft="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#747474"
+                android:text="@string/total_picks_text" />
+        
+            <TextView
+                android:id="@+id/total_picks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#f27a3f"
+                android:gravity="right"
+                android:paddingRight="20dip"
+                android:text="75" />  
+        </TableRow>
+        
+        <TableRow 
+            android:id="@+id/row2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingLeft="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#747474"
+                android:text="@string/total_wins_text" />
+        
+            <TextView
+                android:id="@+id/total_wins"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#f27a3f"
+                android:gravity="right"
+                android:paddingRight="20dip"
+                android:text="87" />
+        </TableRow>
+        
+        <TableRow 
+            android:id="@+id/row3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingLeft="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#747474"
+                android:text="@string/total_losses_text" />
+        
+            <TextView
+                android:id="@+id/total_losses"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#f27a3f"
+                android:gravity="right"
+                android:paddingRight="20dip"
+                android:text="140" />
+        </TableRow>        
+
+        <TableRow 
+            android:id="@+id/row4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingLeft="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#747474"
+                android:text="@string/longest_streak_text" />
+        
+            <TextView
+                android:id="@+id/longest_streak"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:textColor="#f27a3f"
+                android:paddingRight="20dip"
+                android:text="14" />
+        </TableRow>        
+ 
+        <TableRow 
+            android:id="@+id/row5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingLeft="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#747474"
+                android:text="@string/winning_percentage_text" />
+        
+            <TextView
+                android:id="@+id/winning_percentage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:paddingRight="20dip"
+                android:textColor="#f27a3f"
+                android:text="62%" />
+        </TableRow>             
+    </TableLayout>
+    
+    <View
+        android:id="@+id/divider"
+        android:layout_below="@id/tbLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+    
+    <LinearLayout
+        android:id="@+id/total_stats_title"
+        android:layout_below="@id/divider"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:background="#f8f8f8"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+        <TextView
+            android:id="@+id/Overall"
+            android:paddingLeft="10dip"
+            android:paddingTop="8dip"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="#252525"
+            android:text="Overall" />
+    </LinearLayout>
+    
+    <TableLayout
+        android:id="@+id/tbLayout1_overall"
+        android:layout_below="@id/total_stats_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+        
+        <TableRow
+            android:id="@+id/row1_overall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:paddingLeft="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#747474"
+                android:text="@string/total_picks_text" />
+        
+            <TextView
+                android:id="@+id/overall_total_picks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#f27a3f"
+                android:gravity="right"
+                android:paddingRight="20dip"
+                android:text="75" />  
+        </TableRow>
+        
+        <TableRow 
+            android:id="@+id/row2_overall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingLeft="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#747474"
+                android:text="@string/total_wins_text" />
+        
+            <TextView
+                android:id="@+id/overall_total_wins"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#f27a3f"
+                android:gravity="right"
+                android:paddingRight="20dip"
+                android:text="87" />
+        </TableRow>
+        
+        <TableRow 
+            android:id="@+id/row3_overall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingLeft="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#747474"
+                android:text="@string/total_losses_text" />
+        
+            <TextView
+                android:id="@+id/overall_total_losses"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#f27a3f"
+                android:gravity="right"
+                android:paddingRight="20dip"
+                android:text="140" />
+        </TableRow>        
+
+        <TableRow 
+            android:id="@+id/row4_overall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingLeft="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#747474"
+                android:text="@string/longest_streak_text" />
+        
+            <TextView
+                android:id="@+id/overall_longest_streak"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:textColor="#f27a3f"
+                android:paddingRight="20dip"
+                android:text="14" />
+        </TableRow>        
+ 
+        <TableRow 
+            android:id="@+id/row5_overall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingLeft="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#747474"
+                android:text="@string/winning_percentage_text" />
+        
+            <TextView
+                android:id="@+id/overall_winning_percentage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:paddingRight="20dip"
+                android:textColor="#f27a3f"
+                android:text="62%" />
+        </TableRow>             
+    </TableLayout>
+    
+     <View
+        android:id="@+id/divider2"
+        android:layout_below="@id/tbLayout1_overall"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+    
+    <LinearLayout
+        android:id="@+id/lLayout1"
+        android:layout_below="@id/divider2"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:background="#f8f8f8"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+        <TextView
+            android:id="@+id/pick_history"
+            android:paddingLeft="10dip"
+            android:paddingTop="8dip"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="#252525"
+            android:text="@string/pick_history_text" />
+    </LinearLayout>    
+    
+    <TableLayout
+        android:id="@+id/history_table"
+        android:layout_below="@id/lLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/stats_date_id"
+                android:paddingLeft="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:textStyle="bold"
+                android:textColor="#252525"
+                android:text="@string/stats_date_text" />
+            
+            <TextView 
+                android:id="@+id/stats_pick_id"                
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.333"
+                android:textStyle="bold"
+                android:textColor="#252525"
+                android:text="@string/stats_pick_text"/>
+            
+            <TextView
+                android:id="@+id/stats_result_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.333"
+                android:gravity="right"
+                android:paddingRight="20dip"
+                android:textStyle="bold"
+                android:textColor="#252525"
+                android:text="@string/stats_result_text" />
+        </TableRow>
+        
+        
+    </TableLayout>
+    
+    <include android:id="@+id/statButtonMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/tab_navigation_stats" />
+
+    
+</RelativeLayout>

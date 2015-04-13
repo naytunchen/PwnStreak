@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff" >
+    
+    <include
+        android:id="@id/banner_in_leaderboard"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" 
+        layout="@layout/activity_base" />
+    
+    <include
+        android:id="@+id/longest_button_tbr"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/banner_in_leaderboard"
+        layout="@layout/leaderboard_buttons" />
+    
+	<include
+	    android:id="@+id/longest_table_row"
+	    android:layout_below="@id/longest_button_tbr"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    layout="@layout/leader_longest_table_row" />
+    
+    <include
+        android:id="@id/statsButtonLeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/tab_navigation_leaders" />
+
+</RelativeLayout>

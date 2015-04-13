@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+        <TableRow
+        android:id="@+id/leader_button_tbr"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/current_longest_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:background="#333333"
+            android:textColor="#ffffff"
+            android:text="Current/Longest"
+            android:layout_weight="0.5" />
+        
+        <Button
+            android:id="@+id/most_wins_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:background="#333333"
+            android:textColor="#ffffff"
+            android:text="Most Wins"
+            android:layout_weight="0.5" />
+        
+        <Button
+            android:id="@+id/lifetimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:background="#f06000"
+            android:textColor="#ffffff"
+            android:text="Lifetime"
+            android:layout_weight="0.5" />
+        
+    </TableRow>
+    
+
+</LinearLayout>

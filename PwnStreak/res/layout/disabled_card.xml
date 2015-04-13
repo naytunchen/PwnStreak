@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp" >
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <!-- Game Type (i.e. Dota 2, LOL, CS, etc) -->
+        <TextView
+            android:id="@+id/gametype"
+            style="@style/CardText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dota 2"
+            android:textColor="#DCDCDC"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp" />
+        
+        <!-- Separator -->
+        <View
+            android:id="@+id/separator"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:background="#DCDCDC" />
+        
+        <!-- Time -->
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp"
+            android:textColor="#DCDCDC"
+            android:text="4:00 PM"
+            android:textSize="18dp" />
+ 
+    
+    </LinearLayout>
+
+        
+
+        
+       <!-- Create TableRow to put two checkboxes on the single row -->
+           
+    <RelativeLayout
+        android:id="@+id/tablerowRelative"
+        android:layout_below="@id/linearLayout1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#d5d5d5" /> 
+            
+        <!-- Prompt Message -->
+        <TextView
+            android:id="@+id/prompt"
+            style="@style/CardText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dota 2: WIN OR LOSE?"
+            android:textColor="#DCDCDC"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp" />
+        
+        
+        <CheckBox
+            android:id="@+id/checkBoxTeam1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:textSize="13dp" />
+        
+        <!-- Team 1 title next to checkbox (Temp) -->
+        <TextView
+            android:id="@+id/team1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#DCDCDC"
+            android:layout_toRightOf="@id/checkBoxTeam1"
+            android:paddingLeft="3dp"
+            android:gravity="right"
+            android:text="LGD" />
+        
+        <CheckBox
+            android:id="@+id/checkBoxTeam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:textSize="13dp" />
+        
+        <!-- Team 2 title next to checkbox (Temp) -->
+        <TextView
+            android:id="@+id/team2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#DCDCDC"
+            android:layout_toLeftOf="@id/checkBoxTeam2"
+            android:paddingLeft="3dp"
+            android:gravity="right"
+            android:text="Navi'" />
+        
+        <TextView 
+            android:id="@+id/team1Percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DCDCDC"
+            android:layout_below="@id/checkBoxTeam1"
+            android:paddingLeft="3dp"
+            android:gravity="left"
+            android:text="73.2%"
+            android:textSize="20dp" />
+        
+        <TextView
+            android:id="@+id/team2Percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBoxTeam2"
+            android:layout_alignParentRight="true"
+            android:paddingRight="3dp"
+            android:textColor="#DCDCDC"
+            android:gravity="right"
+            android:text="56.5%"
+            android:textSize="20dp" />
+        
+        <TextView
+            android:id="@+id/previewLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DCDCDC"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/team1Percent"
+            android:text="Preview" />
+        
+      </RelativeLayout>
+                     
+            
+        
+    
+</RelativeLayout>

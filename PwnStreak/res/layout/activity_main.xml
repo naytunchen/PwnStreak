@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    >
+    <!-- Header -->
+    <include
+        android:id="@+id/added_header"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        layout="@layout/activity_base" />
+    
+    <TableRow
+        android:id="@+id/tabMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/added_header" >
+        <Button
+            android:id="@+id/yesterdayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:background="#333333"
+            android:textColor="#ffffff"
+            android:text="Yesterday"
+            android:layout_weight="0.3" />
+        
+        <Button
+            android:id="@+id/todayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:background="#f06000"
+            android:textColor="#ffffff"
+            android:text="Today"
+            android:layout_weight="0.3" />
+        
+        <Button
+            android:id="@+id/tomorrowButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:background="#333333"
+            android:textColor="#ffffff"
+            android:text="Tomorrow"
+            android:layout_weight="0.3" />
+        
+    </TableRow>
+        
+    
+<!--     <android.support.v4.view.ViewPager
+	    android:id="@+id/pager"
+	    android:layout_below="@id/added_header"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" /> -->
+	    
+
+    <include android:id="@+id/main_button_menu"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        layout="@layout/tab_navigation_home" />
+    
+    <include android:id="@+id/card_list_main"
+	    android:layout_height="fill_parent"
+	    android:layout_width="fill_parent"
+	    android:layout_below="@id/tabMenu"
+	    android:layout_above="@id/main_button_menu"
+	    layout="@layout/card_list" />
+    
+</RelativeLayout>
+
